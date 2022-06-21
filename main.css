@@ -153,7 +153,7 @@ svg {
 }
 
 .project-container {
-  max-width: 80%;
+  width: 95%;
 }
 
 .project-container .row {
@@ -206,33 +206,26 @@ svg {
 }
 
 .project-overlay h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 80%;
   font-family: "Azeret Mono", monospace;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
-#iss {
-  width: 90%;
+
+.project-list {
+  width: 95%;
+  text-align: start;
 }
 
-.icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 10px;
+.project-list li {
+  font-size: 0.7rem;
+  list-style: none;
 }
 
-.icon {
-  font-size: 1.2rem;
-  padding: 0 0.5rem;
-  transition: 0.4s;
-}
-
-.icon:hover {
-  background-color: rgba(49, 48, 48, 0.673);
+.project-list li::before {
+  content: "\00BB";
+  color: rgb(255, 0, 98);
 }
 
 .btn-project {
@@ -241,7 +234,6 @@ svg {
   background-color: rgb(255, 0, 98);
   color: #fff;
   text-transform: uppercase;
-  margin-top: 1.1rem;
   transition: 0.4s ease-in;
   border: 3px solid rgb(255, 0, 98);
   box-shadow: 5px 5px rgba(255, 0, 98, 0.6);
@@ -288,7 +280,6 @@ svg {
 
 .about-me {
   width: 100vw;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -417,14 +408,24 @@ svg {
     margin-bottom: 2.5rem;
   }
 
-  .icons {
-    padding: 0.1rem 0.5rem;
-    margin-bottom: 1.2rem;
+  .project-list {
+    margin-bottom: 2.5rem;
   }
 
-  .icon {
-    font-size: 1.8rem;
+  .project-list li {
+    font-size: 1rem;
+    margin-top: 0.6rem;
   }
+
+  #momentum h4 {
+    margin: 0;
+  }
+
+  #momentum .project-list {
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
 
   .btn-project {
     width: 10rem;
@@ -513,36 +514,84 @@ svg {
 
   .project-overlay h4 {
     font-size: 1.3rem;
-    margin-bottom: 2.2rem;
+    margin-bottom: 2rem;
   }
 
-  #currency {
-    margin-bottom: 1rem;
+  .project-list li {
+    font-size: 0.85rem;
   }
 
-  .project-overlay p {
-    font-size: 1rem;
+  #momentum h4 {
+    font-size: 1.2rem;
   }
 
-  .icons {
-    padding: 0.1rem 1rem;
+  #momentum .project-list {
+    margin: 0;
+  }
+
+  #momentum .project-list li {
+    font-size: 0.8rem;
+  }
+
+  #iss h4 {
+    margin-top: 0.8rem;
     margin-bottom: 0.8rem;
   }
 
-  .icon {
-    font-size: 1.8rem;
+  #iss .project-list {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
   }
-}
 
-@media only screen and (min-width: 992px) {
-  .icon {
-    font-size: 1.4rem;
+  #iss .project-list li {
+    font-size: 0.8rem;
   }
 
   .btn-project {
     width: 7rem;
     font-size: 0.8rem;
   }
+
+  
+}
+
+@media only screen and (min-width: 992px) {
+
+  #momentum h4 {
+    font-size: 1rem;
+  }
+
+  #momentum .project-list li {
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem; 
+  }
+  #iss h4 {
+    font-size: 1rem;
+  }
+
+  #news h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  #news .project-list {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  #news .project-list li {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem; 
+  }
+
+
+
+  .btn-project {
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+
 
   .about-me {
     width: 50%;
@@ -609,25 +658,100 @@ svg {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
   }
-
-  .icons {
-    padding: 0.2rem 0.8rem;
-    margin-top: 0;
+  #momentum h4 {
+    font-size: 1.3rem;
   }
 
-  .icon {
-    font-size: 1.8rem;
+  #momentum .project-list {
+    margin-bottom: 0.8rem;
   }
+
+  #momentum .project-list li {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem; 
+  }
+  #iss h4 {
+    font-size: 1.2rem;
+  }
+
+  #iss .project-list {
+    margin-bottom: 0.8rem;
+  }
+
+  #news h4 {
+    font-size: 1.3rem;
+  }
+
+  #news .project-list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #news .project-list li {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem; 
+  }
+
+
 
   .btn-project {
-    font-size: 1rem;
-    margin-bottom: 5px;
+    width: 5rem;
+    font-size: 0.7rem;
   }
+
 }
 
 @media only screen and (min-width: 1600px) {
   svg {
     height: 500px;
+  }
+
+  #momentum h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #momentum .project-list {
+    margin-bottom: 1.2rem;
+  }
+
+  #momentum .project-list li {
+    font-size: 1rem;
+    margin-bottom: 0.3rem; 
+  }
+  #iss h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #iss .project-list {
+    margin-bottom: 1.8rem;
+  }
+
+  #news h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #news .project-list {
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
+  }
+
+  #news .project-list li {
+    font-size: 1rem;
+    margin-bottom: 0.3rem; 
+  }
+
+  .project-list li {
+    font-size: 1rem;
+  }
+
+
+
+  .btn-project {
+    width: 7rem;
+    font-size: 1rem;
   }
 
   .about-container svg {
@@ -713,38 +837,6 @@ svg {
     font-size: 3rem;
   }
 
-  .project-overlay h4 {
-    font-size: 2.8rem;
-    margin-bottom: 2.5rem;
-  }
-
-  #currency {
-    margin-bottom: 1rem;
-  }
-
-  .project-overlay p {
-    font-size: 1.8rem;
-  }
-
-  .icons {
-    padding: 0.8rem 1.5rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .icon {
-    font-size: 3rem;
-  }
-
-  .btn-project {
-    font-size: 2rem;
-    width: 12rem;
-    padding: 1rem;
-    box-shadow: 10px 10px rgba(255, 0, 98, 0.6);
-  }
-
-  .btn-project:hover {
-    box-shadow: -10px -10px rgba(255, 0, 98, 0.6), inset 12rem 1rem transparent;
-  }
 
   #about {
     max-height: 1000px;
