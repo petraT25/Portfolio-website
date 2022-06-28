@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
     <title>Petra Tuškan</title>
   </head>
@@ -62,9 +63,8 @@
       <section id="projects">
         <h2>Projects</h2>
         <div class="container project-container">
-          <div class="project-container-overlay"></div>
           <div class="row g-3">
-            <div class="col-12 col-md-6 col-lg-4 project-img-col">
+            <div class="col-md-6 project-img-col" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
               <img src="./travelia.png" class="project-img" />
               <div class="project-overlay">
                 <h4>Travel Agency website</h4>
@@ -77,6 +77,7 @@
                     made with: HTML, Sass, Bootstrap, JavaScript, jQuery, AOS
                     library
                   </li>
+                  <li>contains carousels, parallax effects, filtering destinations, "scroll back to top button", animated counter...</li>
                 </ul>
                 <div class="link">
                   <a
@@ -89,11 +90,69 @@
                 </div>
               </div>
             </div>
+          <div class=" col-md-6 project-description" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+            <h4>Travel Agency website</h4>
+                <ul class="project-list">
+                  <li>
+                    multi-page, mobile-first responsive website for travel
+                    agency
+                  </li>
+                  <li>
+                    made with: HTML, Sass, Bootstrap, JavaScript, jQuery, AOS
+                    library
+                  </li>
+                  <li>
+                    contains carousels, parallax effects, filtering destinations, "scroll back to top button", animated counter...</li>
+                </ul>
+                <div class="link">
+                  <a
+                    href="https://petrat25.github.io/Travel-agency/"
+                    target="_blank"
+                    type="button"
+                    class="btn btn-project"
+                    >View Live</a
+                  >
+                </div>
+          </div>
+          </div>
 
-            <div class="col-12 col-md-6 col-lg-4 project-img-col">
+          <div class="row g-3">
+            <div class=" col-md-6 project-description" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <h4>Momentum-clone</h4>
+                  <ul class="project-list">
+                    <li>
+                      mobile-first, responsive application inspired by Chrome's
+                      Momentum dash
+                    </li>
+                    <li>
+                      different greeting depending on the time of day, weather
+                      information based on user location, changeable inspirational
+                      quotes
+                    </li>
+                    <li>
+                      made with: HTML, CSS, JavaScript
+                    </li>
+                    <li>
+                      data fetched from "freeWeatherAPI" and "quotableAPI" (NOTE:
+                      in recent days there were times when quotableAPI server was down,
+                      or response time has been quite slow, approximately 5-15
+                      sec)
+                    </li>
+                  </ul>
+                  <div class="link">
+                    <a
+                      href="https://petrat25.github.io/Momentum-clone/"
+                      target="_blank"
+                      type="button"
+                      class="btn btn-project"
+                      >View Live</a
+                    >
+                  </div>
+            </div>
+            <div class="col-md-6 project-img-col" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
               <img src="./momentum.png" class="project-img" />
               <div class="project-overlay" id="momentum">
-                <h4>Momentum Clone</h4>
+                <h4>Momentum-clone</h4>
                 <ul class="project-list">
                   <li>
                     mobile-first, responsive application inspired by Chrome's
@@ -125,118 +184,232 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="col-12 col-md-6 col-lg-4 project-img-col">
-              <img src="./photo.png" class="project-img" />
-              <div class="project-overlay">
-                <h4>Photography Portfolio</h4>
-                <ul class="project-list">
-                  <li>
-                    mobile-first, responsive website
-                  </li>
-                  <li>
-                    made with: HTML, Sass, Bootstrap, JavaScript, AOS library
-                  </li>
-                </ul>
-                <div class="link">
-                  <a
-                    href="https://petrat25.github.io/Photography_page/"
-                    target="_blank"
-                    type="button"
-                    class="btn btn-project"
-                    >View Live</a
-                  >
+            <div class="row g-3">
+              <div class="col-md-6 project-img-col" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <img src="./photo.png" class="project-img" />
+                <div class="project-overlay">
+                  <h4>Photography Portfolio</h4>
+                  <ul class="project-list">
+                    <li>
+                      mobile-first, responsive website
+                    </li>
+                    <li>
+                      made with: HTML, CSS, Bootstrap, JavaScript, AOS library
+                    </li>
+                    <li>
+                    by using lazy loading in HTML images performance improved 15-20%, both on mobile and desktop.
+                    </li>
+                  </ul>
+                  <div class="link">
+                    <a
+                      href="https://petrat25.github.io/Photography_page/"
+                      target="_blank"
+                      type="button"
+                      class="btn btn-project"
+                      >View Live</a
+                    >
+                  </div>
                 </div>
               </div>
+            <div class=" col-md-6 project-description" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+              <h4>Photography Portfolio</h4>
+                  <ul class="project-list">
+                    <li>
+                      multi-page, mobile-first responsive website for travel
+                      agency
+                    </li>
+                    <li>
+                      made with: HTML, CSS, Bootstrap, JavaScript, AOS library
+                      library
+                    </li>
+                    <li>
+                    by using lazy loading in HTML images performance improved 15-20%, both on mobile and desktop.
+                    </li>
+                  </ul>
+                  <div class="link">
+                    <a
+                      href="https://petrat25.github.io/Photography_page/"
+                      target="_blank"
+                      type="button"
+                      class="btn btn-project"
+                      >View Live</a
+                    >
+                  </div>
+            </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 project-img-col">
-              <img src="./iss.png" class="project-img" />
-              <div class="project-overlay" id="iss">
+            <div class="row g-3">
+              <div class=" col-md-6 project-description" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <h4>International Space Station Live Tracker</h4>
-                <ul class="project-list">
-                  <li>
-                    tracks the real time location of the ISS and shows it on the
-                    map
-                  </li>
-                  <li>
-                    also shows coordinates, velocity, altitude and visibility
-                    (daylight, night) of the ISS
-                  </li>
-                  <li>
-                    made with: HTML, CSS, JavaScript, Leaflet.js
-                  </li>
-                  <li>
-                    data fetched from "wheretheiss.at API"
-                  </li>
-                </ul>
-                <div class="link">
-                  <a
-                    href="https://petrat25.github.io/ISS-Location/"
-                    target="_blank"
-                    type="button"
-                    class="btn btn-project"
-                    >View Live</a
-                  >
+                    <ul class="project-list">
+                      <li>
+                        tracks the real time location of the ISS and shows it on the
+                        map
+                      </li>
+                      <li>
+                        also shows coordinates, velocity, altitude and visibility
+                        (daylight, night) of the ISS
+                      </li>
+                      <li>
+                        made with: HTML, CSS, JavaScript, Leaflet.js
+                      </li>
+                      <li>
+                        data fetched from "wheretheiss.at API"
+                      </li>
+                    </ul>
+                    <div class="link">
+                      <a
+                        href="https://petrat25.github.io/ISS-Location/"
+                        target="_blank"
+                        type="button"
+                        class="btn btn-project"
+                        >View Live</a
+                      >
+                    </div>
+              </div>
+              <div class="col-md-6 project-img-col" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <img src="./iss.png" class="project-img" />
+                <div class="project-overlay" id="iss">
+                  <h4>International Space Station Live Tracker</h4>
+                  <ul class="project-list">
+                    <li>
+                      tracks the real time location of the ISS and shows it on the
+                      map
+                    </li>
+                    <li>
+                      also shows coordinates, velocity, altitude and visibility
+                      (daylight, night) of the ISS
+                    </li>
+                    <li>
+                      made with: HTML, CSS, JavaScript, Leaflet.js
+                    </li>
+                    <li>
+                      data fetched from "wheretheiss.at API"
+                    </li>
+                  </ul>
+                  <div class="link">
+                    <a
+                      href="https://petrat25.github.io/ISS-Location/"
+                      target="_blank"
+                      type="button"
+                      class="btn btn-project"
+                      >View Live</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 project-img-col">
-              <img src="./animal.png" class="project-img" />
-              <div class="project-overlay">
+              <div class="row g-3">
+                <div class="col-md-6 project-img-col" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                  <img src="./animal.png" class="project-img" />
+                  <div class="project-overlay">
+                    <h4>Animal Shelter Website</h4>
+                    <ul class="project-list">
+                      <li>
+                        multi-page, mobile-first, responsive website
+                      </li>
+                      <li>
+                        made with: HTML, CSS, Bootstrap, jQuery, Slick library, AOS
+                        library
+                      </li>
+                    </ul>
+                    <div class="link">
+                      <a
+                        href="https://petrat25.github.io/Animal-Shelter/"
+                        target="_blank"
+                        type="button"
+                        class="btn btn-project"
+                        >View Live</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              <div class=" col-md-6 project-description" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <h4>Animal Shelter Website</h4>
-                <ul class="project-list">
-                  <li>
-                    multi-page, mobile-first, responsive website
-                  </li>
-                  <li>
-                    made with: HTML, CSS, Bootstrap, jQuery, Slick library, AOS
-                    library
-                  </li>
-                </ul>
-                <div class="link">
-                  <a
-                    href="https://petrat25.github.io/Animal-Shelter/"
-                    target="_blank"
-                    type="button"
-                    class="btn btn-project"
-                    >View Live</a
-                  >
+                    <ul class="project-list">
+                      <li>
+                        multi-page, mobile-first, responsive website
+                      </li>
+                      <li>
+                        made with: HTML, CSS, Bootstrap, jQuery, Slick library, AOS
+                        library
+                      </li>
+                    </ul>
+                    <div class="link">
+                      <a
+                        href="https://petrat25.github.io/Animal-Shelter/"
+                        target="_blank"
+                        type="button"
+                        class="btn btn-project"
+                        >View Live</a
+                      >
+                    </div>
+              </div>
+              </div>
+  
+              <div class="row g-3">
+                <div class=" col-md-6 project-description" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                  <h4>Latest World News</h4>
+                      <ul class="project-list">
+                        <li>
+                          simple app that shows top articles from around the world
+                        </li>
+                        <li>
+                          can be toggled between light and dark mode
+                        </li>
+                        <li>
+                          made with: React.js
+                        </li>
+                        <li>
+                          data fetched from "The NYTimes API"
+                        </li>
+                      </ul>
+                      <div class="link">
+                        <a
+                          href="https://petrat25.github.io/Latest-news/"
+                          target="_blank"
+                          type="button"
+                          class="btn btn-project"
+                          >View Live</a
+                        >
+                      </div>
+                </div>
+                <div class="col-md-6 project-img-col" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                  <img src="./news-app.png" class="project-img" />
+                  <div class="project-overlay" id="news">
+                    <h4>Latest World News</h4>
+                    <ul class="project-list">
+                      <li>
+                        simple app that shows top articles from around the world
+                      </li>
+                      <li>
+                        can be toggled between light and dark mode
+                      </li>
+                      <li>
+                        made with: React.js
+                      </li>
+                      <li>
+                        data fetched from "The NYTimes API"
+                      </li>
+                    </ul>
+                    <div class="link">
+                      <a
+                        href="https://petrat25.github.io/Latest-news/"
+                        target="_blank"
+                        type="button"
+                        class="btn btn-project"
+                        >View Live</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 project-img-col">
-              <img src="./news-app.png" class="project-img" />
-              <div class="project-overlay" id="news">
-                <h4>Latest World News</h4>
-                <ul class="project-list">
-                  <li>
-                    simple app that shows top articles from around the world
-                  </li>
-                  <li>
-                    can be toggled between light and dark mode
-                  </li>
-                  <li>
-                    made with: React.js (functional components)
-                  </li>
-                  <li>
-                    data fetched from "The NYTimes API"
-                  </li>
-                </ul>
-                <div class="link">
-                  <a
-                    href="https://petrat25.github.io/Latest-news/"
-                    target="_blank"
-                    type="button"
-                    class="btn btn-project"
-                    >View Live</a
-                  >
-                </div>
-              </div>
-            </div>
           </div>
         </div>
+        
       </section>
 
       <section id="about">
@@ -310,12 +483,14 @@
       </section>
     </main>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    
     <script src="main.js"></script>
   </body>
 </html>
