@@ -1,2 +1,2 @@
 # Portfolio-website
-Simple portfolio website made with HTML, CSS and JavaScript(GSAP)
+Personal portfolio website made with HTML, CSS and JavaScript.
